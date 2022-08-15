@@ -1,0 +1,40 @@
+﻿@model RouxAcademy.Models.HomeViewModels.ContactViewModel
+@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "~/Views/Shared/_ContentLayout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    Html.AntiForgeryToken();
+
+<fieldset>
+
+    <h1>Contact Us</h1>
+
+    <h4>Send us your questions and feedback.</h4>
+    <hr />
+    <br />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Comments, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(m => m.Comments, new { @class = "form-control" })
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</fieldset>
+}

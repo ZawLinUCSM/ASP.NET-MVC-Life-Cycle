@@ -2,7 +2,8 @@
 ASP.NET MVC: HTTP Request Life Cycle
 
 # LinkedIn Learning course by Janam Siam
-    Recommend to learn details in [here](https://www.linkedin.com/learning/asp-dot-net-mvc-http-request-life-cycle/welcome-2?autoplay=true)
+    Visit here to learn details ( https://www.linkedin.com/learning/asp-dot-net-mvc-http-request-life-cycle/welcome-2?autoplay=true )
+    
 
 # Learning objectives
     Fundamentals of the request life cycle
